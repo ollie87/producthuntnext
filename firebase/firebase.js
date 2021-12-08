@@ -1,7 +1,6 @@
 import { initializeApp } from "firebase/app";
-import { createUserWithEmailAndPassword, getAuth, updateProfile, signInWithEmailAndPassword } from 'firebase/auth'
+import { createUserWithEmailAndPassword, getAuth, updateProfile, signInWithEmailAndPassword, signOut } from 'firebase/auth'
 import firebaseConfig from "./config";
-
 
 class Firebase {
     constructor () {
@@ -18,6 +17,10 @@ class Firebase {
 
     async login (email, password) {
         return signInWithEmailAndPassword(this.auth, email, password)
+    }
+
+    async cerrarSesion () {
+        await signOut(this.auth)
     }
 }
 
