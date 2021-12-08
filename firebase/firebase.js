@@ -1,5 +1,5 @@
 import { initializeApp } from "firebase/app";
-import { createUserWithEmailAndPassword, getAuth, updateProfile } from 'firebase/auth'
+import { createUserWithEmailAndPassword, getAuth, updateProfile, signInWithEmailAndPassword } from 'firebase/auth'
 import firebaseConfig from "./config";
 
 
@@ -14,6 +14,10 @@ class Firebase {
         return await updateProfile(nuevoUsuario.user, {
             displayName: nombre
         })
+    }
+
+    async login (email, password) {
+        return signInWithEmailAndPassword(this.auth, email, password)
     }
 }
 
