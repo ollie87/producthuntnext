@@ -1,11 +1,12 @@
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyDDkp-AfsdjG6izekng2th4dhMcJlPFc1c",
-    authDomain: "product-hunt-26f27.firebaseapp.com",
-    projectId: "product-hunt-26f27",
-    storageBucket: "product-hunt-26f27.appspot.com",
-    messagingSenderId: "337487027420",
-    appId: "1:337487027420:web:de8521c84a926a3739a819"
+    apiKey: "AIzaSyDE7yCEOed1SNWmHMdg66X_fx1JF7uBv3o",
+    authDomain: "wedding-fc665.firebaseapp.com",
+    projectId: "wedding-fc665",
+    storageBucket: "wedding-fc665.appspot.com",
+    messagingSenderId: "360986963729",
+    appId: "1:360986963729:web:372f338cedfc5c5831a6b0",
+    measurementId: "G-WG73WEKC9Y"
   };
 
   export default firebaseConfig;
